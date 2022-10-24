@@ -1,0 +1,180 @@
+#images .images--general {
+  display: flex;
+  align-items: flex-start;
+}
+#images .images--general__image img {
+  width: 800px;
+  height: 400px;
+}
+#images .images--general__image img:hover {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 29.02%, #000000 110.12%);
+}
+#images .images--general__image--title {
+  position: relative;
+  top: -100px;
+}
+#images .images--general__image--title p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  padding-left: 20px;
+}
+#images .images--general__image--title--ioc {
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: -30px;
+  left: 10px;
+}
+#images .images--general__image--title--ioc a {
+  font-size: 50px;
+  color: #009EE3;
+}
+#images .images--general__image--title--ioc h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  padding-right: 15px;
+}
+#images .images--general__image--title--ioc span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  padding: 7px 10px 0 0;
+}
+#images .images--general__image--title--ioc__dot {
+  margin-left: 500px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #009EE3;
+}
+#images .images--general__image--title--ioc__dot a {
+  font-size: 40px;
+}
+#images .images--general__img {
+  position: relative;
+}
+#images .images--general__img img {
+  width: 450px;
+  height: 400px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 29.02%, #000000 110.12%);
+}
+#images .images--general__img--text {
+  position: absolute;
+  bottom: 0;
+}
+#images .images--general__img--text p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin: -10px 25px;
+}
+#images .images--general__img--text__ioc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+}
+#images .images--general__img--text__ioc a {
+  font-size: 50px;
+  color: #009EE3;
+}
+#images .images--general__img--text__ioc h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+#images .images--general__img--text__ioc span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+#images .images--general__img--text__ioc--dot {
+  margin-left: 100px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #009EE3;
+}
+#images .images--general__img--text__ioc--dot a {
+  font-size: 40px;
+}
+#images .images--general__ac {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -133px;
+}
+#images .images--general__ac--img {
+  position: relative;
+}
+#images .images--general__ac--img img {
+  width: 450px;
+  height: 400px;
+}
+#images .images--general__ac--img__text {
+  position: absolute;
+  bottom: 0;
+}
+#images .images--general__ac--img__text p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin: -10px 25px;
+}
+#images .images--general__ac--img__text--ioc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+}
+#images .images--general__ac--img__text--ioc a {
+  font-size: 50px;
+  color: #009EE3;
+}
+#images .images--general__ac--img__text--ioc h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+#images .images--general__ac--img__text--ioc span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+#images .images--general__ac--img__text--ioc__dot {
+  margin-left: 100px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #009EE3;
+}
+#images .images--general__ac--img__text--ioc__dot a {
+  font-size: 40px;
+}

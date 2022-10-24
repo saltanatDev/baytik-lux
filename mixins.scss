@@ -1,0 +1,23 @@
+@mixin btn {
+  padding: 10px 50px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+  background: transparent;
+  transition: .4s;
+  &:hover {
+    transform: scale(1.1);
+    background: red;
+    color: white;
+    border: 2px solid red;
+  }
+
+}
+
+@mixin align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

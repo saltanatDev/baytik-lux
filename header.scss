@@ -1,0 +1,84 @@
+
+#header {
+  padding: 15px 0;
+  background: rgba(0, 81, 255, 0.39);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+
+  .navbar {
+    @include align();
+
+    &--nav {
+      &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #253659;
+        padding: 0 20px;
+        transition: .4s;
+
+        &:hover {
+          color: white;
+          border-bottom: 1px solid #00078b;
+        }
+
+        &__btn {
+          @include btn();
+        }
+      }
+    }
+  }
+
+  .navbar--inst {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar--inst__tg a {
+      width: 30px;
+      height: 30px;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      border-radius: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #253659;
+      margin: 8px;
+    }
+
+    .navbar--inst__wt a {
+      width: 30px;
+      height: 30px;
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      border-radius: 45%;
+    @include align();
+      background: #253659;
+      margin: 8px;
+    }
+
+  }
+
+  .navbar--tel {
+    .navbar--tel__kg a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: #253659;
+
+    }
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+.red {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

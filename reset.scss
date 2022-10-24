@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body, html {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all ease;
+  width: 100%;
+  height: 100vh;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  right: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #616161;
+
+  transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+
+  width: 300px;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  background-color: #ECEFF1;
+  box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+
+  color: #333;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition-duration: .25s;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.hero-modal-bg-square {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 340px;
+  height: 440px;
+  background: #FFFFFF;
+  border-radius: 5px 5px 0 0;
+}
+
+.hero-modal-bg-se-close {
+  width: 340px;
+  height: 70px;
+  background: #253659;
+  border-radius: 5px 5px 0 0;
+
+}
+
+.hero-modal-bg-se-close h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 10px 5px;
+
+}
+
+.hero-modal-bg-se-close p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.hero-modal-bg-se-close a {
+  font-size: 15px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+.hero-modal-bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-modal-bg-square-block {
+  display: flex;
+  align-items: center;
+
+}
+
+.hero-modal-bg-square-block img {
+  margin: 30px 5px;
+}
+
+.hero-modal-bg-square-block--t {
+  width: 275px;
+  height: 96px;
+  background: #F0F0F0;
+  border-radius: 5px;
+}
+
+.hero-modal-bg-square-block--t p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #253659;
+}
+
+.hero-modal-bg-square-blocks {
+  display: flex;
+  align-items: center;
+
+}
+
+.hero-modal-bg-square-blocks p {
+  width: 275px;
+  height: 77px;
+  background: #F0F0F0;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #253659;
+}
+
+.hero-modal-bg-square-blocks--t img {
+  margin: 30px 5px;
+}
+
+.hero-modal-bg-squareq input {
+  width: 230px;
+  height: 40px;
+  font-size: 14px;
+  color: #282525;
+  background: #F0F0F0;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.hero-modal-bg-squareq--dot {
+  width: 40px;
+  height: 40px;
+  background: #F0F0F0;
+  border-radius: 5px;
+}
+
+.hero-modal-bg-squareq {
+  margin: 25px 0 0 -20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.hero-modal-bg-squareq--dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.hero-modal-bg-squareq--dot a {
+  width: 20px;
+  height: 18px;
+  border-radius: 1px;
+  color: #009EE3;
+
+}

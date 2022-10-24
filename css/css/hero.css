@@ -1,0 +1,152 @@
+#hero {
+  background: #537ce3;
+}
+#hero .hero {
+  background: url("/img/Baytik_poselok_View02.png") no-repeat center/cover;
+  min-height: 100vh;
+}
+#hero .hero--img {
+  display: flex;
+  align-items: center;
+}
+#hero .hero--img img {
+  margin-right: 300px;
+  height: 300px;
+  margin-left: -30px;
+}
+#hero .hero--img__image {
+  width: 400px;
+  height: 400px;
+  margin-left: 200px;
+  animation: image 4s alternate;
+}
+@keyframes image {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#hero .hero--line {
+  position: absolute;
+  top: 21%;
+  left: 10px;
+  width: 520px;
+  height: 0;
+  border: 0.5px solid #253659;
+}
+#hero .hero--line__lines {
+  position: absolute;
+  left: -35%;
+  width: 520px;
+  margin-top: 49.6%;
+  height: 0;
+  border: 0.5px solid #253659;
+  transform: rotate(90deg);
+}
+#hero .hero--block {
+  position: absolute;
+  top: 20%;
+  left: 6.45%;
+}
+#hero .hero--block__blocks {
+  width: 16px;
+  height: 16px;
+  background: rgba(37, 54, 89, 0.2);
+  border-radius: 50%;
+}
+#hero .hero--block__blocks--blocking {
+  width: 10px;
+  height: 10px;
+  background: #253659;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  margin-left: 3px;
+}
+#hero .hero--general {
+  display: flex;
+}
+#hero .hero--general--img {
+  margin-top: -140px;
+  position: absolute;
+}
+#hero .hero--general--img img {
+  width: 450px;
+  height: 400px;
+  margin-left: 70px;
+}
+#hero .hero--general__title {
+  position: relative;
+  z-index: 999;
+  margin-top: -10px;
+}
+#hero .hero--general__title h1 {
+  margin-left: 70px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #253659;
+  margin-top: -30px;
+  padding: 0 30px;
+}
+#hero .hero--general__title h2 {
+  font-size: 25px;
+  margin-left: 70px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #253659;
+  padding: 0 30px;
+}
+#hero .hero--general__title h3 {
+  font-size: 25px;
+  margin-left: 70px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #253659;
+  padding: 0 30px;
+}
+#hero .hero--general__title button {
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  background: rgba(37, 54, 89, 0.8);
+  backdrop-filter: blur(5px);
+  border: none;
+  margin-left: 80px;
+}
+#hero .hero--general__title button:hover {
+  background: transparent;
+  color: #253659;
+  border: 2px solid #253659;
+}
+#hero .hero--link {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#hero .hero--link__dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  border-radius: 50%;
+  background: rgba(37, 54, 89, 0.8);
+  backdrop-filter: blur(5px);
+  margin-right: 50px;
+}
+#hero .hero--link__dot a {
+  text-align: center;
+  color: #5f8ff1;
+}
+
+/*# sourceMappingURL=hero.css.map */

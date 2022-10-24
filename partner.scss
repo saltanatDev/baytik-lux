@@ -1,0 +1,37 @@
+#partner {
+  padding: 50px 0;
+  .partner {
+    &--text {
+      &__block {
+        h1 {
+          font-size: 36px;
+          letter-spacing: 0.1em;
+          color: #253659;
+        }
+      }
+
+      &__img {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--3 {
+          display: flex;
+          background: #FFFFFF;
+
+          img {
+            width: 100px;
+            height: 100px;
+            margin: 0 10px;
+          }
+        }
+
+        &--class {
+          img {
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
+}

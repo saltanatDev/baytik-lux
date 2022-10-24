@@ -1,0 +1,68 @@
+#lux {
+  background: url("../img/lux-fon.png") no-repeat center/cover;
+  width: 1335px;
+  height: 500px;
+  .lux {
+    display: flex;
+    align-items: center;
+    &--image {
+      padding: 200px 50px;
+    }
+    &--block {
+      padding-left: 40px;
+      width: 420px;
+      height: 420px;
+      background: rgba(37, 54, 89, 0.8);
+      backdrop-filter: blur(2px);
+      h1 {
+        font-family: 'Raleway',sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        padding: 20px 0;
+      }
+      input {
+        font-family: 'Open Sans',sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        color: rgba(255, 255, 255, 0.5);
+        padding-left: 20px;
+
+        width: 300px;
+        height: 60px;
+        border: 1px solid #FFFFFF;
+        background: transparent;
+        margin: 10px 0;
+        transition: .4s;
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+      }
+      button {
+        font-family: 'Open Sans',sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        color: #253659;
+
+        width: 217px;
+        height: 60px;
+        border: none;
+        background: #FFFFFF;
+        margin-top: 20px;
+        transition: .4s;
+        &:hover {
+          transform: scale(1.1);
+          background: transparent;
+          border: 2px solid #FFFFFF;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+#home {
+  width: 1440px;
+  height: 200px;
+  background: #FFFFFF;
+}
+#home .home {
+  display: flex;
+  align-items: center;
+}
+#home .home__title h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  color: red;
+}
+#home .home--swiper {
+  margin-top: 60px;
+}
+#home .home--swiper .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#home .home--swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+#home .home--swiper .swiper-slide img {
+  display: block;
+  width: 40%;
+  margin-left: 30px;
+}
+#home .home--swiper p {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #253659;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=home.css.map */

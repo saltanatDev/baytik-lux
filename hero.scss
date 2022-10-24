@@ -1,0 +1,176 @@
+#hero {
+  background: #537ce3;
+
+  .hero {
+    background: url("/img/Baytik_poselok_View02.png") no-repeat center/cover;
+    min-height: 100vh;
+    width: 1300px;
+    height: 800px;
+
+
+    &--img {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 300px;
+        height: 300px;
+        margin-left: -32px;
+
+      }
+
+      &__image {
+        width: 400px;
+        height: 900px;
+        margin-left: 200px;
+        animation: image 4s alternate;
+        @keyframes image {
+          0% {
+            transform: translateX(-300px);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+          100% {
+            transform: translateY(0);
+          }
+
+        }
+      }
+    }
+
+    &--line {
+      position: absolute;
+      top: 23%;
+      left: 10px;
+      width: 590px;
+      height: 0;
+      border: 0.5px solid #253659;
+
+      &__lines {
+        position: absolute;
+        left: -37%;
+        width: 660px;
+        margin-top: 56%;
+        height: 0;
+        border: 0.5px solid #253659;
+        transform: rotate(90deg);
+      }
+    }
+
+    &--block {
+      position: absolute;
+      top: 22%;
+      left: 9.2%;
+
+      &__blocks {
+        width: 16px;
+        height: 16px;
+        background: rgba(37, 54, 89, 0.2);
+        border-radius: 50%;
+
+        &--blocking {
+          width: 10px;
+          height: 10px;
+          background: #253659;
+          border-radius: 50%;
+          position: absolute;
+          top: 3px;
+          margin-left: 3px;
+        }
+      }
+    }
+
+    &--general {
+      display: flex;
+
+      &--img {
+        margin-top: -250px;
+        position: absolute;
+
+        img {
+          width: 450px;
+          height: 400px;
+          margin-left: 70px;
+
+        }
+      }
+
+      &__title {
+        position: relative;
+        z-index: 999;
+        margin-top: -10px;
+
+        h1 {
+          margin-left: 70px;
+          font-size: 25px;
+          text-transform: uppercase;
+          color: #253659;
+          margin-top: -100px;
+          padding: 0 30px;
+        }
+
+        h2 {
+          font-size: 25px;
+          margin-left: 70px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #253659;
+          padding: 10px 30px;
+        }
+
+        h3 {
+          font-size: 25px;
+          margin-left: 70px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #253659;
+          padding: 10px 30px;
+        }
+
+        button {
+          width: 200px;
+          height: 60px;
+          font-size: 18px;
+          color: #FFFFFF;
+          background: rgba(37, 54, 89, 0.8);
+          backdrop-filter: blur(5px);
+          border: none;
+          margin-left: 90px;
+
+          &:hover {
+            background: transparent;
+            color: #253659;
+            border: 2px solid #253659;
+          }
+        }
+      }
+    }
+
+    &--link {
+      padding-top: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      &__dot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        border-radius: 50%;
+        background: rgba(37, 54, 89, 0.8);
+        backdrop-filter: blur(5px);
+        margin-right: 100px;
+
+        a {
+          display: flex;
+          align-items: center;
+          color: #5f8ff1;
+        }
+      }
+    }
+  }
+}
