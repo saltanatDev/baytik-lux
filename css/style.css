@@ -65,7 +65,7 @@ button {
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 9999;
 }
 
 .menu__btn > span,
@@ -96,7 +96,7 @@ button {
   top: 0;
   right: -100%;
   width: 300px;
-  height: 100%;
+  height: 560px;
   margin: 0;
   padding: 80px 0;
   list-style: none;
@@ -319,8 +319,8 @@ button {
   font-size: 15px;
   border-radius: 45%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   background: #253659;
   margin: 8px;
 }
@@ -329,9 +329,6 @@ button {
   font-size: 14px;
   line-height: 19px;
   color: #253659;
-}
-#header .hamburger-menu {
-  display: none;
 }
 
 .red {
@@ -497,19 +494,19 @@ button {
   min-height: 100vh;
 }
 #company .company {
-  padding: 60px 92.5px;
+  padding: 35px 92.5px;
 }
 #company .company .line {
   width: 0.2px;
   height: 540px;
   border: 0.2px solid rgba(37, 54, 89, 0.37);
-  margin-left: 15px;
+  margin-left: 5px;
   position: absolute;
 }
 #company .company hr {
   width: 1300px;
   border: 0.5px solid rgba(37, 54, 89, 0.37);
-  margin-left: -130px;
+  margin-left: -160px;
 }
 #company .company .dot {
   width: 12px;
@@ -517,7 +514,7 @@ button {
   border-radius: 50%;
   background: #253659;
   margin-top: -6px;
-  margin-left: 10px;
+  margin-left: 8px;
   position: absolute;
   box-shadow: -0.5px 1px 1px 6px rgba(141, 140, 140, 0.35);
 }
@@ -539,13 +536,13 @@ button {
   color: #253659;
 }
 #company .company--btn {
-  margin-left: 855px;
+  margin-left: 850px;
 }
 #company .company--btn button {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  color: red;
+  color: white;
   width: 200px;
   height: 60px;
   background: rgba(37, 54, 89, 0.8);
@@ -561,12 +558,12 @@ button {
 #company .company--group {
   width: 1040px;
   height: 200px;
-  background: rgba(203, 73, 200, 0.8);
+  background: rgba(37, 54, 89, 0.8);
   backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 #company .company--group__block {
   display: flex;
@@ -653,9 +650,9 @@ button {
   align-items: flex-start;
 }
 #images .images--general__image img {
-  width: 850px;
+  width: 890px;
   height: 400px;
-  margin-left: -10px;
+  margin-left: -50px;
 }
 #images .images--general__image img:hover {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 29.02%, #000000 110.12%);
@@ -1038,7 +1035,7 @@ button {
 #footer hr {
   width: 1439px;
   border: 0.5px solid #FFFFFF;
-  margin-left: -30px;
+  margin-left: -70px;
 }
 #footer .title {
   display: flex;
@@ -1071,6 +1068,428 @@ button {
   color: #009EE3;
 }
 
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media (max-width: 1140px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .hero-modal {
+    display: none;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  #company .company--group {
+    width: 800px;
+    height: 200px;
+  }
+  #company .company--btn {
+    margin-left: 614px;
+  }
+  #company .company .line2 {
+    top: 124%;
+  }
+  #company .company .dot2 {
+    top: 124%;
+  }
+  #images .images--general {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+  }
+  #images .images--general__image img {
+    width: 992px;
+  }
+  #images .images--general__ac {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3px;
+  }
+  #images .images--general__img img {
+    width: 980px;
+    height: 450px;
+    margin-top: -77px;
+  }
+  #images .images--general__img--text__ioc--dot {
+    margin-left: 600px;
+  }
+  #images .images--general__image--title--ioc__dot {
+    margin-left: 600px;
+  }
+  #images .images--general__ac--img img {
+    width: 999px;
+    height: 428px;
+  }
+  #images .images--general__ac--img__text--ioc__dot {
+    margin-left: 600px;
+  }
+  #lux {
+    width: 992px;
+    height: 533px;
+  }
+  #lux .lux {
+    display: block;
+  }
+  #lux .lux--image {
+    padding: 4px 136px;
+  }
+  #lux .lux--block {
+    margin-left: 187px;
+  }
+  #footer .footer--online__set {
+    display: flex;
+    flex-wrap: wrap;
+    width: 230px;
+  }
+}
+@media (max-width: 768px) {
+  #header .navbar {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  #hero .hero {
+    background: url(/img/Baytik_poselok_View02.png) no-repeat center/cover;
+    min-height: 100vh;
+    width: 1152px;
+    height: 715px;
+  }
+  #hero .hero--general__title h1 {
+    margin-left: 70px;
+    font-size: 23px;
+  }
+  #hero .hero--general__title h2 {
+    margin-left: 70px;
+    font-size: 23px;
+  }
+  #hero .hero--general__title h3 {
+    margin-left: 70px;
+    font-size: 23px;
+  }
+  #hero .hero--general__title button {
+    margin-left: 104px;
+  }
+  #hero .hero--line {
+    position: absolute;
+    top: 24%;
+  }
+  #hero .hero--line__lines {
+    left: -31%;
+    width: 586px;
+    margin-top: 50%;
+  }
+  #hero .hero--block {
+    position: absolute;
+    top: 23%;
+    left: 15.2%;
+  }
+  #lux .lux--image {
+    padding: 20px 44px;
+  }
+  #lux .lux--block {
+    margin-left: 138px;
+  }
+  #lux .lux--block {
+    width: 376px;
+    height: 369px;
+  }
+  #company .company--title p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  #company .company--group {
+    width: 610px;
+    height: 180px;
+    margin-left: -15px;
+  }
+  #company .company--btn {
+    margin-left: 395px;
+  }
+  #company .company .line2 {
+    width: 0.5px;
+    height: 540px;
+    border: 0.5px solid rgba(37, 54, 89, 0.37);
+    position: absolute;
+    right: 68px;
+    top: 148%;
+  }
+  #company .company .dot2 {
+    top: 147%;
+    right: 8%;
+  }
+  #home .home--title h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #253659;
+  }
+  #images .images--general__image img {
+    width: 775px;
+    margin-left: -20px;
+  }
+  #images .images--general__image--title--ioc__dot {
+    margin-left: 429px;
+  }
+  #images .images--general__img img {
+    width: 770px;
+    height: 450px;
+    margin-left: -20px;
+  }
+  #images .images--general__img--text__ioc--dot {
+    margin-left: 440px;
+  }
+  #images .images--general__ac--img img {
+    width: 774px;
+    padding-left: 20px;
+  }
+  #images .images--general__ac {
+    display: flex;
+    flex-direction: column;
+  }
+  #lux .lux--imag img {
+    width: 300px;
+    margin: 0 15px;
+  }
+  #partner .partner--text {
+    display: block;
+    align-items: center;
+  }
+  #partner .partner--text__img {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #partner .partner--text__img--class img {
+    padding-top: 40px;
+  }
+  #footer .footer {
+    justify-content: space-around;
+    margin-left: 62px;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  #footer .footer--menu {
+    padding-bottom: 50px;
+  }
+  #footer .footer--address {
+    padding-left: 60px;
+  }
+  #footer .footer--online {
+    margin-left: 30px;
+  }
+  #images .images--general__ac--img__text--ioc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 35px;
+  }
+  #images .images--general__ac--img__text--ioc__dot {
+    margin-left: 465px;
+  }
+  #images .images--general__ac--img__text p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: -9px 49px;
+  }
+}
+@media (max-width: 576px) {
+  #header .navbar {
+    display: none;
+    position: absolute;
+    z-index: 99990;
+  }
+  #home {
+    height: 10px;
+  }
+  #hero .hero {
+    background: url("/img/Baytik_poselok_View02.png") no-repeat center/cover;
+    width: 550px;
+    height: 272px;
+  }
+  #hero .hero--general--img img {
+    width: 370px;
+    height: 250px;
+    margin-left: -60px;
+    margin-top: 55px;
+  }
+  #hero .hero--img img {
+    margin-right: 35px;
+    margin-top: -40px;
+  }
+  #hero .hero--link {
+    padding-top: 92px;
+    margin-left: 450px;
+    position: fixed;
+    z-index: 99;
+  }
+  #hero .hero--line {
+    width: 562px;
+  }
+  #hero .hero--line__lines {
+    margin-top: 15%;
+  }
+  #company .company--title p {
+    font-weight: 400;
+    font-size: 16px;
+    width: 477px;
+  }
+  #hero .hero--general__title {
+    z-index: 99;
+  }
+  #company .company .dot {
+    display: none;
+  }
+  #company .company .dot2 {
+    display: none;
+  }
+  #company .company hr {
+    display: none;
+  }
+  #company .company--title {
+    margin-top: 0;
+    margin-left: -124px;
+  }
+  #company .company--group {
+    width: 511px;
+    height: 339px;
+    margin-left: -85px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #company .company--btn {
+    margin-left: 226px;
+  }
+  #company .company {
+    padding: 22px 92.5px;
+  }
+  #company .company .line {
+    display: none;
+  }
+  #company .company .line2 {
+    display: none;
+  }
+  #home .home {
+    display: none;
+    align-items: center;
+  }
+  #images .images--general__image img {
+    width: 585px;
+    margin-left: -20px;
+  }
+  #images .images--general__image--title p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding-left: 20px;
+  }
+  #images .images--general__image--title--ioc h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding-right: 15px;
+  }
+  #images .images--general__image--title--ioc__dot {
+    margin-left: 229px;
+    margin-top: 10px;
+  }
+  #images .images--general__img--text p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: -10px 25px;
+  }
+  #images .images--general__img--text__ioc--dot {
+    margin-left: 255px;
+  }
+  #images .images--general__img--text__ioc--dot {
+    margin-left: 264px;
+  }
+  #images .images--general__ac--img img {
+    width: 576px;
+    padding-left: 20px;
+  }
+  #images .images--general__ac--img__text p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #images .images--general__ac--img__text--ioc h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #images .images--general__ac--img__text--ioc__dot {
+    margin-left: 268px;
+  }
+  #lux .lux--image img {
+    Width: 380px;
+    Height: 45px;
+  }
+  #lux .lux--block {
+    height: 380px;
+    margin-left: 26px;
+  }
+  #lux .lux {
+    padding-top: 20px;
+  }
+  #partner .partner--text__img--3 {
+    background: #FFFFFF;
+    flex-wrap: wrap;
+    width: 82%;
+  }
+  #partner .partner--text__img--class img {
+    width: 500px;
+    height: 200px;
+  }
+  #footer .footer {
+    justify-content: space-around;
+    margin-left: 62px;
+    flex-wrap: wrap;
+    width: 67%;
+  }
+  #footer .footer--address {
+    padding-left: 5px;
+  }
+  #footer .footer--online {
+    margin-left: 3px;
+  }
+  #header {
+    padding: 15px 0;
+    background: rgba(0, 81, 255, 0.39);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+  }
+}
 .scroll {
   overflow: hidden;
 }
