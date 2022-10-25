@@ -55,7 +55,9 @@
       color: rgb(255, 255, 255);
       font-size: 15px;
       border-radius: 45%;
-    @include align();
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: #253659;
       margin: 8px;
     }
@@ -72,9 +74,7 @@
     }
   }
 
-  .hamburger-menu {
-    display: none;
-  }
+ 
 }
 
 .red {

@@ -3,20 +3,20 @@
   min-height: 100vh;
 
   .company {
-    padding: 60px 92.5px;
+    padding: 35px 92.5px;
 
     .line {
       width: 0.2px;
       height: 540px;
       border: 0.2px solid rgba(37, 54, 89, 0.37);
-      margin-left: 15px;
+      margin-left: 5px;
       position: absolute;
     }
 
     hr {
       width: 1300px;
       border: 0.5px solid rgba(37, 54, 89, 0.37);
-      margin-left: -130px;
+      margin-left: -160px;
     }
 
     .dot {
@@ -25,7 +25,7 @@
       border-radius: 50%;
       background: #253659;
       margin-top: -6px;
-      margin-left: 10px;
+      margin-left: 8px;
       position: absolute;
       box-shadow: -0.5px 1px 1px 6px rgba(141, 140, 140, 0.35);
     }
@@ -52,13 +52,13 @@
     }
 
     &--btn {
-      margin-left: 855px;
+      margin-left: 850px;
 
       button {
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         font-size: 18px;
-        color: red;
+        color: white;
         width: 200px;
         height: 60px;
         background: rgba(37, 54, 89, 0.8);
@@ -77,12 +77,12 @@
     &--group {
       width: 1040px;
       height: 200px;
-      background: rgba(203, 73, 200, 0.8);
+      background: rgba(37, 54, 89, 0.8);
       backdrop-filter: blur(5px);
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      margin-left: 15px;
+      margin-left: 10px;
 
       &__block {
         display: flex;
